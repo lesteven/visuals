@@ -9,28 +9,33 @@
   margin: 0;
   padding: 0;
 }
-.contact-form * {
+.contact-form > * {
   padding-bottom: 5%;
+}
+.contact-form * {
   width: 100%;
 }
 .contact-form input {
   height: 30px;
-  padding: 1%;
+  padding: 4px;
 }
 .contact-form textarea {
   width: 100%;
-  padding: 1%;
+  padding: 4px;
 }
 .name {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5% 0;
 }
 
 .name-div {
   display: flex;
   flex-direction: row;
   padding: 0;
+}
+.name-div input {
+  padding: 4px;
 }
 .name-div p {
   font-size: 12px;
@@ -46,6 +51,7 @@
   color: #fdfdfd;
   border: none;
   font-size: 20px;
-  padding: 3%;
+  padding: 2%;
   height: auto;
+  width: 35%;
 }
