@@ -6,12 +6,14 @@ import styles from '../css/navbar.css';
 class NavBar extends Component {
   render() {
     return (
-      <nav className = 'nav-bar'>
-        <Link to = '/'> Home </Link>
-        <Link to = '/photography'> Photography </Link>
-        <Link to = '/about'> About </Link>
-        <Link to = '/contact'> Contact </Link>
-      </nav>
+      <div className = 'nav-wrapper'>
+        <nav className = 'nav-bar max-width'>
+          <Link to = '/'> Home </Link>
+          <Link to = '/photography'> Photography </Link>
+          <Link to = '/about'> About </Link>
+          <Link to = '/contact'> Contact </Link>
+        </nav>
+      </div>
     )
   }
 }

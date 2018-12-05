@@ -1,14 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import NavBar from './components/NavBar';
-
+import Banner from './components/Banner';
 
 class Template extends Component {
 
   render() {
     return (
       <Fragment>
+        <Banner />
+        <NavBar />
         <div className = 'max-width'>
-          <NavBar />
           <div className = 'page-wrapper'>
             { this.props.children }
           </div>
