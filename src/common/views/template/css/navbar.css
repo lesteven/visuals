@@ -1,0 +1,18 @@
+
+.nav-bar {
+  display: flex;
+  padding: 5% 0%;
+  justify-content: space-around;
+}
+.nav-bar * {
+  flex: 1;
+  margin: 1%;
+  padding: 3%;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fdfdfd;
+  border: 1px solid black;
+  background-color: #032b2f;
+  border-radius: 10px;
+  max-width: 180px;
+}

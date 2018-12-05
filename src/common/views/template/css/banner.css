@@ -1,0 +1,47 @@
+.banner {
+  display: flex;
+  padding: 5%;
+  background-color: #d73a31;
+  color: #fdfdfd;
+  opacity: 0.9;
+}
+
+.profile, .external-links {
+  flex: 1;
+}
+
+.profile img {
+  max-height: 150px;
+  border-radius: 100%;
+}
+
+.profile, .external-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.name h1 {
+  font-size: 54px;
+  font-weight: normal;
+  margin: 1% 0%;
+}
+.name h3 {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.external-links img {
+  height: 60px;
+}
+.external-links a {
+  padding: 5%;
+}
+
