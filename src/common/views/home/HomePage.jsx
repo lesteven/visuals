@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
-
+import style from './css/home.css';
 
 class HomePage extends Component {
   render() {
     return (
-      <Fragment>
-        <h1> home page! </h1>
-      </Fragment>
+      <div className = 'home'>
+        <img src = '/adobe.jpg' />
+      </div>
     )
   }
 }
