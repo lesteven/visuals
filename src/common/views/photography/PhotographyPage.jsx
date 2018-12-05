@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
 
-class ProjectsPage extends Component {
+class PhotographyPage extends Component {
   render() {
     return (
       <Fragment>
-        <h1> Projects! </h1>
+        <h1> Photography! </h1>
       </Fragment>
     )
   }
@@ -14,4 +14,4 @@ class ProjectsPage extends Component {
 
 
 
-export default ProjectsPage;
+export default PhotographyPage;

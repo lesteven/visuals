@@ -8,8 +8,9 @@ class NavBar extends Component {
     return (
       <nav className = 'nav-bar'>
         <Link to = '/'> Home </Link>
-        <Link to = '/projects'> Projects </Link>
+        <Link to = '/photography'> Photography </Link>
         <Link to = '/about'> About </Link>
+        <Link to = '/contact'> Contact </Link>
       </nav>
     )
   }

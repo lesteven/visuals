@@ -1,8 +1,8 @@
 import makeRouteObject from './utils/makeRouteObject';
 import HomePage from './views/home/HomePage';
 import AboutPage from './views/about/AboutPage';
-import ProjectsPage from './views/projects/ProjectsPage';
-
+import PhotographyPage from './views/photography/PhotographyPage';
+import ContactPage from './views/contact/ContactPage';
 
 const prefix = '';
 const exactTrue = true;
@@ -14,9 +14,11 @@ const homeTitle = 'Home';
 const aboutURL = '/about';
 const aboutTitle = 'About';
 
-const projectsURL = '/projects';
-const projectsTitle = 'Projects';
+const photographyURL = '/photography';
+const photographyTitle = 'Photography';
 
+const contactURL = '/contact';
+const contactTitle = 'Contact';
 
 const routes = {
   routes: [
@@ -29,10 +31,10 @@ const routes = {
     ),
     makeRouteObject(
       prefix,
-      projectsURL,
-      ProjectsPage,
+      photographyURL,
+      PhotographyPage,
       exactTrue,
-      projectsTitle,
+      photographyTitle,
     ),
     makeRouteObject(
       prefix,
@@ -40,6 +42,13 @@ const routes = {
       AboutPage,
       exactTrue,
       aboutTitle,
+    ),
+    makeRouteObject(
+      prefix,
+      contactURL,
+      ContactPage,
+      exactTrue,
+      contactTitle,
     ),
   ],
 };
