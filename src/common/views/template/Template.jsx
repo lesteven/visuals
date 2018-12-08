@@ -9,7 +9,7 @@ class Template extends Component {
       <Fragment>
         <Banner />
         <NavBar />
-        <div className = 'max-width'>
+        <div className = 'max-width-two'>
           <div className = 'page-wrapper'>
             { this.props.children }
           </div>

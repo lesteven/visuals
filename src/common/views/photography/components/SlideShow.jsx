@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import styles from '../css/slideshow.css';
 
+
+
 class SlideShow extends Component {
   left = () => {
     const div = document.getElementsByClassName('slideshow')[0];

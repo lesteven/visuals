@@ -1,11 +1,12 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import style from '../css/contactForm.css';
 
 class ContactForm extends Component {
   render() {
+  const { submit } = this.props;
     return (
-      <Fragment>
-        <form className = 'contact-form'>
+      <>
+        <form className = 'contact-form' onSubmit = { submit }>
           <fieldset className = 'name'>
             <p> Name* </p>
             <div className = 'name-div'>
@@ -33,7 +34,7 @@ class ContactForm extends Component {
           </label>
           <input type = 'submit' name = 'submit' id = 'submit'/>
         </form>
-      </Fragment>
+      </>
     )
   }
 }
