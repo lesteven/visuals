@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import SlideShow from './components/SlideShow';
+import Swipe from './components/Swipe';
 import data from './data';
 
 class PhotographyPage extends Component {
   render() {
     return (
       <>
-        <SlideShow data = { data }/>
+        <Swipe data = { data } />
       </>
     )
   }

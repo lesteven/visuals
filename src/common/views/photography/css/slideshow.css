@@ -7,6 +7,7 @@
   width: 90%;
   margin: auto;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 .slideshow::-webkit-scrollbar {
   display: none;
