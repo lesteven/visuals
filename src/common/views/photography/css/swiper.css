@@ -18,6 +18,11 @@
 .selected {
   background-color: #2b2b2b !important;
 }
+
+.control-dots {
+  padding: 0;
+}
+
 /* DESKTOP VIEW */
 
 @media only screen and (min-width:500px) {
