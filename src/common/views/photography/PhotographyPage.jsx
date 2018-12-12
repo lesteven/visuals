@@ -11,11 +11,13 @@ class PhotographyPage extends Component {
     return store.dispatch(updateCurrent(params));
   }
   componentDidUpdate(prevProps) {
-    if (prevProps.location != this.props.location) {
-      const { location, updateCurrent } = this.props;
-      const { pathname } = location;
+    const { location, updateCurrent } = this.props;
+    const { pathname } = location;
+    const split = pathname.split('/');
+    const newUrl = split.length > 2;
+    if (prevProps.location != location && newUrl) {
       const data = {
-        current: pathname.split('/')[2],
+        current: split[2],
       }
       updateCurrent(data);
     }

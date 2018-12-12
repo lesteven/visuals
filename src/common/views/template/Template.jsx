@@ -14,6 +14,7 @@ class Template extends Component {
             { this.props.children }
           </div>
         </div>
+        <div className = 'bottom'></div>
       </Fragment>
     )
   }  
