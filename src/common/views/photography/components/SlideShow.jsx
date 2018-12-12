@@ -14,23 +14,29 @@ class SlideShow extends Component {
   }
   render() {
   const { data } = this.props;
-    return (
-      <section className = 'slideshow-wrapper'>
-        <div className = 'slide-left' onClick = { this.left }>
-          <div className = 'left-arrow'></div>
-        </div>
-        <section className = 'slideshow'>
-          { data.map((each,index) =>
-            <div key = { each } className = 'slide-image' 
-              id = { index }>
-              <img src = { each } />
-            </div> )}
+    if (data) {
+      return (
+        <section className = 'slideshow-wrapper'>
+          <div className = 'slide-left' onClick = { this.left }>
+            <div className = 'left-arrow'></div>
+          </div>
+          <section className = 'slideshow'>
+            { data.map((each,index) =>
+              <div key = { each } className = 'slide-image' 
+                id = { index }>
+                <img src = { each } />
+              </div> )}
+          </section>
+          <div className = 'slide-right' onClick = { this.right }>
+            <div className = 'right-arrow'></div>
+          </div>
         </section>
-        <div className = 'slide-right' onClick = { this.right }>
-          <div className = 'right-arrow'></div>
-        </div>
-      </section>
-    )
+      )
+    } else {
+      return (
+        <div></div>
+      )
+    }
   }
 }
 

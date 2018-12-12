@@ -7,15 +7,19 @@ class Swipe extends Component {
 
   render() {
   const { data } = this.props;
-    return (
-      <Carousel useKeyboardArrows = { true } emulateTouch = { true }>
-        { data.map((each, index) =>
-          <div key = { index } id = 'swipe-images'> 
-            <img src = { each }/> 
-          </div>) }
-      </Carousel>
+    if (data) {
+      return (
+        <Carousel useKeyboardArrows = { true } emulateTouch = { true }>
+          { data.map((each, index) =>
+            <div key = { index } id = 'swipe-images'> 
+              <img src = { `/${each}` }/> 
+            </div>) }
+        </Carousel>
 
-    )
+      )
+    } else {
+      return <div></div>
+    }
   }
 }
 

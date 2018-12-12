@@ -33,7 +33,7 @@ const routes = {
       prefix,
       photographyURL,
       PhotographyPage,
-      exactTrue,
+      exactFalse,
       photographyTitle,
     ),
     makeRouteObject(

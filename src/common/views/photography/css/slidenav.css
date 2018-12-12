@@ -1,0 +1,10 @@
+.slide-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+.slide-nav a {
+  text-decoration: none;
+  padding: 2%;
+}
+

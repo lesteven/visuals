@@ -1,11 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import style from './css/home.css';
+import data from './data';
 
 class HomePage extends Component {
   render() {
     return (
       <div className = 'home'>
-        <img src = '/adobe.jpg' />
+        { data.map((each,index) => 
+            <div key = { index }>
+              <img src = { each } />
+            </div> )}
       </div>
     )
   }
